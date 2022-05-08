@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	routing "github.com/go-ozzo/ozzo-routing/v2"
 	"github.com/stretchr/testify/assert"
+	routing "github.com/zekrotja/ozzo-routing/v2"
 )
 
 func TestPanicHandler(t *testing.T) {

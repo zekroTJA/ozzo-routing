@@ -1,4 +1,4 @@
-module github.com/go-ozzo/ozzo-routing/v2
+module github.com/zekrotja/ozzo-routing/v2
 
 go 1.13
 

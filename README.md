@@ -1,9 +1,9 @@
 # ozzo-routing
 
-[![GoDoc](https://godoc.org/github.com/go-ozzo/ozzo-routing?status.png)](http://godoc.org/github.com/go-ozzo/ozzo-routing)
+[![GoDoc](https://godoc.org/github.com/zekrotja/ozzo-routing?status.png)](http://godoc.org/github.com/zekrotja/ozzo-routing)
 [![Build Status](https://travis-ci.org/go-ozzo/ozzo-routing.svg?branch=master)](https://travis-ci.org/go-ozzo/ozzo-routing)
 [![Coverage Status](https://coveralls.io/repos/github/go-ozzo/ozzo-routing/badge.svg?branch=master)](https://coveralls.io/github/go-ozzo/ozzo-routing?branch=master)
-[![Go Report](https://goreportcard.com/badge/github.com/go-ozzo/ozzo-routing)](https://goreportcard.com/report/github.com/go-ozzo/ozzo-routing)
+[![Go Report](https://goreportcard.com/badge/github.com/zekrotja/ozzo-routing)](https://goreportcard.com/report/github.com/zekrotja/ozzo-routing)
 
 **You may consider using [go-rest-api](https://github.com/qiangxue/go-rest-api) to jumpstart your new RESTful applications with ozzo-routing.**
 
@@ -33,7 +33,7 @@ Go 1.13 or above.
 In your Go project using `go mod`, run the following command to install the package:
 
 ```
-go get github.com/go-ozzo/ozzo-routing/v2
+go get github.com/zekrotja/ozzo-routing/v2
 ```
 
 ## Getting Started
@@ -48,12 +48,12 @@ package main
 import (
 	"log"
 	"net/http"
-	"github.com/go-ozzo/ozzo-routing/v2"
-	"github.com/go-ozzo/ozzo-routing/v2/access"
-	"github.com/go-ozzo/ozzo-routing/v2/slash"
-	"github.com/go-ozzo/ozzo-routing/v2/content"
-	"github.com/go-ozzo/ozzo-routing/v2/fault"
-	"github.com/go-ozzo/ozzo-routing/v2/file"
+	"github.com/zekrotja/ozzo-routing/v2"
+	"github.com/zekrotja/ozzo-routing/v2/access"
+	"github.com/zekrotja/ozzo-routing/v2/slash"
+	"github.com/zekrotja/ozzo-routing/v2/content"
+	"github.com/zekrotja/ozzo-routing/v2/fault"
+	"github.com/zekrotja/ozzo-routing/v2/file"
 )
 
 func main() {
@@ -337,8 +337,8 @@ under the specified directories, while the latter serves the content of a single
 
 ```go
 import (
-	"github.com/go-ozzo/ozzo-routing/v2"
-	"github.com/go-ozzo/ozzo-routing/v2/file"
+	"github.com/zekrotja/ozzo-routing/v2"
+	"github.com/zekrotja/ozzo-routing/v2/file"
 )
 
 router := routing.NewRouter()
@@ -357,20 +357,20 @@ ozzo-routing comes with a few commonly used handlers in its subpackages:
 
 Handler name 					| Description
 --------------------------------|--------------------------------------------
-[access.Logger](https://godoc.org/github.com/go-ozzo/ozzo-routing/access) | records an entry for every incoming request
-[auth.Basic](https://godoc.org/github.com/go-ozzo/ozzo-routing/auth) | provides authentication via HTTP Basic
-[auth.Bearer](https://godoc.org/github.com/go-ozzo/ozzo-routing/auth) | provides authentication via HTTP Bearer
-[auth.Query](https://godoc.org/github.com/go-ozzo/ozzo-routing/auth) | provides authentication via token-based query parameter
-[auth.JWT](https://godoc.org/github.com/go-ozzo/ozzo-routing/auth) | provides JWT-based authentication
-[content.TypeNegotiator](https://godoc.org/github.com/go-ozzo/ozzo-routing/content) | supports content negotiation by response types
-[content.LanguageNegotiator](https://godoc.org/github.com/go-ozzo/ozzo-routing/content) | supports content negotiation by accepted languages
-[cors.Handler](https://godoc.org/github.com/go-ozzo/ozzo-routing/cors) | implements the CORS (Cross Origin Resource Sharing) specification from the W3C
-[fault.Recovery](https://godoc.org/github.com/go-ozzo/ozzo-routing/fault) | recovers from panics and handles errors returned by handlers
-[fault.PanicHandler](https://godoc.org/github.com/go-ozzo/ozzo-routing/fault) | recovers from panics happened in the handlers
-[fault.ErrorHandler](https://godoc.org/github.com/go-ozzo/ozzo-routing/fault) | handles errors returned by handlers by writing them in an appropriate format to the response
-[file.Server](https://godoc.org/github.com/go-ozzo/ozzo-routing/file) | serves the files under the specified folder as response content
-[file.Content](https://godoc.org/github.com/go-ozzo/ozzo-routing/file) | serves the content of the specified file as the response
-[slash.Remover](https://godoc.org/github.com/go-ozzo/ozzo-routing/slash) | removes the trailing slashes from the request URL and redirects to the proper URL
+[access.Logger](https://godoc.org/github.com/zekrotja/ozzo-routing/access) | records an entry for every incoming request
+[auth.Basic](https://godoc.org/github.com/zekrotja/ozzo-routing/auth) | provides authentication via HTTP Basic
+[auth.Bearer](https://godoc.org/github.com/zekrotja/ozzo-routing/auth) | provides authentication via HTTP Bearer
+[auth.Query](https://godoc.org/github.com/zekrotja/ozzo-routing/auth) | provides authentication via token-based query parameter
+[auth.JWT](https://godoc.org/github.com/zekrotja/ozzo-routing/auth) | provides JWT-based authentication
+[content.TypeNegotiator](https://godoc.org/github.com/zekrotja/ozzo-routing/content) | supports content negotiation by response types
+[content.LanguageNegotiator](https://godoc.org/github.com/zekrotja/ozzo-routing/content) | supports content negotiation by accepted languages
+[cors.Handler](https://godoc.org/github.com/zekrotja/ozzo-routing/cors) | implements the CORS (Cross Origin Resource Sharing) specification from the W3C
+[fault.Recovery](https://godoc.org/github.com/zekrotja/ozzo-routing/fault) | recovers from panics and handles errors returned by handlers
+[fault.PanicHandler](https://godoc.org/github.com/zekrotja/ozzo-routing/fault) | recovers from panics happened in the handlers
+[fault.ErrorHandler](https://godoc.org/github.com/zekrotja/ozzo-routing/fault) | handles errors returned by handlers by writing them in an appropriate format to the response
+[file.Server](https://godoc.org/github.com/zekrotja/ozzo-routing/file) | serves the files under the specified folder as response content
+[file.Content](https://godoc.org/github.com/zekrotja/ozzo-routing/file) | serves the content of the specified file as the response
+[slash.Remover](https://godoc.org/github.com/zekrotja/ozzo-routing/slash) | removes the trailing slashes from the request URL and redirects to the proper URL
 
 The following code shows how these handlers may be used:
 
@@ -378,10 +378,10 @@ The following code shows how these handlers may be used:
 import (
 	"log"
 	"net/http"
-	"github.com/go-ozzo/ozzo-routing/v2"
-	"github.com/go-ozzo/ozzo-routing/v2/access"
-	"github.com/go-ozzo/ozzo-routing/v2/slash"
-	"github.com/go-ozzo/ozzo-routing/v2/fault"
+	"github.com/zekrotja/ozzo-routing/v2"
+	"github.com/zekrotja/ozzo-routing/v2/access"
+	"github.com/zekrotja/ozzo-routing/v2/slash"
+	"github.com/zekrotja/ozzo-routing/v2/fault"
 )
 
 router := routing.New()

@@ -1,14 +1,15 @@
 package routing_test
 
 import (
-	"github.com/go-ozzo/ozzo-routing/v2"
-	"github.com/go-ozzo/ozzo-routing/v2/access"
-	"github.com/go-ozzo/ozzo-routing/v2/content"
-	"github.com/go-ozzo/ozzo-routing/v2/fault"
-	"github.com/go-ozzo/ozzo-routing/v2/file"
-	"github.com/go-ozzo/ozzo-routing/v2/slash"
 	"log"
 	"net/http"
+
+	routing "github.com/zekrotja/ozzo-routing/v2"
+	"github.com/zekrotja/ozzo-routing/v2/access"
+	"github.com/zekrotja/ozzo-routing/v2/content"
+	"github.com/zekrotja/ozzo-routing/v2/fault"
+	"github.com/zekrotja/ozzo-routing/v2/file"
+	"github.com/zekrotja/ozzo-routing/v2/slash"
 )
 
 func Example() {

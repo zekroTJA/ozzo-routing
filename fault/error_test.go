@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/go-ozzo/ozzo-routing/v2"
 	"github.com/stretchr/testify/assert"
+	routing "github.com/zekrotja/ozzo-routing/v2"
 )
 
 func TestErrorHandler(t *testing.T) {
